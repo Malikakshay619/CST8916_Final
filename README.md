@@ -1,5 +1,4 @@
 # CST8916_Final_Project
-Real-time Monitoring System for Rideau Canal Skateway
 The Rideau Canal Skateway, located in Ottawa, Canada, is one of the world’s largest outdoor skating rinks. Given its historical and iconic status, ensuring the safety of skaters is of utmost importance. The ice conditions and weather factors such as temperature and snow accumulation must be monitored regularly to ensure that the skateway remains safe for users.
 
 To address this, I have designed a real-time monitoring system that simulates IoT sensors deployed at key locations along the Rideau Canal (Dow’s Lake, Fifth Avenue, NAC). These sensors collect data about the following every 10 seconds:
