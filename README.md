@@ -73,3 +73,4 @@ FROM
 GROUP BY
   location,
   TumblingWindow(minute, 5)
+```
