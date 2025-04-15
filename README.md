@@ -58,7 +58,8 @@ Simulated IoT sensors generate data for three key locations along the Rideau Can
   "externalTemperature": 0,
   "timestamp": "2025-04-04T16:51:00.745122Z"
 }
-
+```
+Query for SQL Stream
 SELECT
   location,
   AVG(iceThickness) AS avgIceThickness,
