@@ -74,7 +74,7 @@ GROUP BY
   location,
   TumblingWindow(minute, 5)
 ```
-**Usage Instructions
+***Usage Instructions***
 Running the IoT Sensor Simulation:
 Install Python
 
