@@ -60,6 +60,7 @@ Simulated IoT sensors generate data for three key locations along the Rideau Can
 }
 ```
 Query for SQL Stream
+```
 SELECT
   location,
   AVG(iceThickness) AS avgIceThickness,
