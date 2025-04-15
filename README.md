@@ -25,3 +25,49 @@ Data Flow
 Sensors → Azure IoT Hub
 IoT Hub → Azure Stream Analytics
 Stream Analytics → Azure Blob Storage
+
+# Rideau Canal IoT Simulation – Implementation Details
+
+## 1. IoT Sensor Simulation
+
+Simulated IoT sensors generate data for three key locations along the Rideau Canal Skateway:
+- **Dow's Lake**
+- **Fifth Avenue**
+- **National Arts Centre (NAC)**
+
+### Data Collected:
+- Ice Thickness (in cm)
+- Surface Temperature (in °C)
+- Snow Accumulation (in cm)
+- External Temperature (in °C)
+
+**Frequency:** Every 10 seconds  
+**Format:** JSON  
+**Python Scripts:**  
+- `DowsLake_Simulator.py`  
+- `FifthAvenue_Simulator.py`  
+- `NAC_Simulator.py`
+
+### Sample JSON Payload:
+```json
+{
+  "location": "Dow's Lake",
+  "iceThickness": 33,
+  "surfaceTemperature": 3,
+  "snowAccumulation": 8,
+  "externalTemperature": 0,
+  "timestamp": "2025-04-04T16:51:00.745122Z"
+}
+
+SELECT
+  location,
+  AVG(iceThickness) AS avgIceThickness,
+  MAX(snowAccumulation) AS maxSnowAccumulation,
+  System.Timestamp AS timestamp
+INTO
+  ridueoutput
+FROM
+  ridueinput
+GROUP BY
+  location,
+  TumblingWindow(minute, 5)
