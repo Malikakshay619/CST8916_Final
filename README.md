@@ -19,6 +19,7 @@ Azure Stream Analytics: Processes data in 5-minute tumbling windows to calculate
 Average ice thickness
 Maximum snow accumulation Aggregates are grouped by location.
 Azure Blob Storage: Stores the processed output, organized by location and timestamp for easy access and analysis.
+![image](https://github.com/user-attachments/assets/470969f0-4422-45a2-9b2b-07e45a8d6636)
 
 Data Flow
 Sensors → Azure IoT Hub
