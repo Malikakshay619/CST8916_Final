@@ -74,3 +74,14 @@ GROUP BY
   location,
   TumblingWindow(minute, 5)
 ```
+**Usage Instructions
+Running the IoT Sensor Simulation:
+Install Python
+
+Create three sensor scripts:
+
+DowsLake_Simulator.py
+
+FifthAvenue_Simulator.py
+
+NAC_Simulator.py
