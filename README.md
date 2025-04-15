@@ -85,3 +85,11 @@ DowsLake_Simulator.py
 FifthAvenue_Simulator.py
 
 NAC_Simulator.py
+
+## Reflection
+
+At first, I faced difficulties running the Python simulation scripts in a virtual environment because the `requirements.txt` file was not properly configured, which led to missing dependencies. This caused the scripts to fail.
+
+To resolve this, I followed a video tutorial that guided me through the correct setup process, including creating the virtual environment and installing the required packages. After completing these steps, I was able to run all three sensor scripts without issues.
+
+Overall, this project enhanced my understanding of Azure IoT services and real-time data processing. I gained hands-on experience in simulating sensor data, configuring Azure IoT Hub and Stream Analytics, and managing output data through Azure Blob Storage.
